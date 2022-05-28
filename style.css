@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: black;
+    --secondary-color: lime;
+}
+body {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Heading */
+.heading {
+    font-size: 1.5rem;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    line-height: 3rem;
+    text-shadow: 1px 1px var(--secondary-color);
+}
+
+/* Divider */
+.divider {
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input and Output Box */
+.user-input-box, .output-box {
+    width: 60%;
+    height: 22vh;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    border: 1px solid var(--secondary-color);
+    background-color: white;
+    color: black;
+}
+.output-box {
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Translate btn */
+#btn-translate {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.3rem 1.3rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--secondary-color);
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px var(--secondary-color);
+}
+#btn-translate:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem 0;
+    /* margin-top: 1.5rem; */
+    background-color: var(--secondary-color);
+    color: black;
+}
+.footer-info {
+    font-size: 1.1rem;
+    width: 90%;
+}
+
+/* Media Queries */
+@media (max-width:900px) {
+    .user-input-box, .output-box {
+        width: 80%;
+    }
+}
+
+@media (max-width:680px) {
+    .heading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:530px) {
+    .heading {
+        padding: 0.8rem;
+    }
+    #btn-translate {
+        font-size: 1.3rem;
+    }
+    .user-input-box, .output-box {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:418px) {
+    .heading {
+        line-height: 3rem;
+        padding: 0.8rem 0;
+    }
+}
